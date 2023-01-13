@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "modul-7"
+version = "0.1.0"
+description = ""
+authors = ["ortursucceeh <109922331+ortursucceeh@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "modul_7"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+alembic = "^1.9.1"
+sqlalchemy = "^1.4.46"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
