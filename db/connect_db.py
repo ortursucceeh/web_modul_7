@@ -13,7 +13,9 @@ password = config.get('DB_DEV', 'password')
 db_name = config.get('DB_DEV', 'db_name')
 host = config.get('DB_DEV', 'host')
 port = config.get('DB_DEV', 'port')
+
 url_to_db = f"postgresql://{username}:{password}@{host}:{port}/{db_name}" 
+
 # poetry add psycopg2
 
 engine = create_engine(url_to_db, echo=True, pool_size=5)

@@ -11,7 +11,7 @@ Base = declarative_base()
 class Class(Base):
     __tablename__ = "classes"
     id = Column(Integer, primary_key=True)
-    name = Column(String(100), nullable=False)
+    name = Column(String(150), nullable=False)
     students = relationship("Student", back_populates="class")
 
 
@@ -33,7 +33,7 @@ class Teacher(Base):
 class Subject(Base):
     __tablename__ = "subjects"
     id = Column(Integer, primary_key=True)
-    name = Column(String(100), nullable=False, unique=True)
+    name = Column(String(150), nullable=False, unique=True)
     teacher_id = Column(Integer, ForeignKey('teachers.id', ondelete="CASCADE"))
     teacher = relationship('Teacher', back_populates='subjects')
     subjects = relationship('Grade', back_populates='subject')
@@ -50,7 +50,7 @@ class Grade(Base):
     subject = relationship('Subject', back_populates='subjects')
     student = relationship('Student', back_populates='students')
 
-# shoul be m2m
+# should be m2m
 # class GradeStudent(Base):
 #     __tablename__ = "grades_to_students"
 #     id = Column(Integer, primary_key=True)
