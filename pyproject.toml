@@ -8,9 +8,14 @@ packages = [{include = "modul_7"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-alembic = "^1.9.1"
 sqlalchemy = "^1.4.46"
+alembic = "^1.9.2"
+psycopg2 = "^2.9.5"
+faker = "^16.4.0"
 
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.1"
 
 [build-system]
 requires = ["poetry-core"]
