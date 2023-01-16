@@ -22,3 +22,4 @@ url_to_db = f"postgresql://{username}:{password}@{host}:{port}/{db_name}"
 engine = create_engine(url_to_db, echo=True, pool_size=5)
 Session = sessionmaker(bind=engine)
 session = Session()
+conn = engine.connect()
