@@ -1,4 +1,4 @@
-# ORM SQLAlchemy, alembic and argparse
+# SQLAlchemy ORM, alembic and argparse
 
 "db/" has two files: "connect_db.py" - to connect sqlalchemy to PostgeSQL and in "models.py" have described sqlalchemy models. 
 
