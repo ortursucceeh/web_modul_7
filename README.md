@@ -1,6 +1,6 @@
 # ORM SQLAlchemy, alembic and argparse
 
-"db/" has two files: "connect_db.py" - to connect sqlalchemy to PostgeSQL and in "models.py" have described sqlalchemy models.
+"db/" has two files: "connect_db.py" - to connect sqlalchemy to PostgeSQL and in "models.py" have described sqlalchemy models. \n
 "seeds/" has "fill_data.py" which can fullfill the database.
 "queries/" has "my_select.py" which has 12 SQLAlchemy ORM queries to database.
 "alembic/" has some versions(migrations) of database.
